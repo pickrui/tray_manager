@@ -123,7 +123,7 @@ class TrayManager {
 
     switch (defaultTargetPlatform) {
       case TargetPlatform.linux:
-        if (runningInSandbox()) {
+        if (runningInPortalSandbox()) {
           // Pass the icon name as specified if running in a sandbox.
           //
           // This is required because when running in a sandbox, paths are not
